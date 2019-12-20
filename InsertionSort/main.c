@@ -25,9 +25,11 @@ int main(int argc, char** argv)
     
     printArr("Entering array:", sortArr, size);
 
-    sortArr = insertSort(sortArr, size);
+    insertSort(sortArr, size);
 
     printArr("Outgoing array:", sortArr, size);
 
+    free(sortArr);
+    system("pause");
     return 0;
 }
