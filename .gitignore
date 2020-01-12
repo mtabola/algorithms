@@ -6,6 +6,10 @@ Debug/
 *.vcxproj
 *.vcxproj.*
 *.sln
+*.pdf
 
 #ignore extern libs
 *.dll
+
+#ignore .gitignore
+.gitignore

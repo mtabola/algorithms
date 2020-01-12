@@ -1,6 +1,6 @@
 #pragma once
 
-void insertSort(int* sortArr, int size) 
+void* insertSort(int* sortArr, int size) 
 {
     for (int i = 1; i < size; i++)
     {
@@ -13,4 +13,5 @@ void insertSort(int* sortArr, int size)
             sortArr[j + 1] = key;
         }
     }
+   return sortArr;
 }
