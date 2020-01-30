@@ -9,4 +9,4 @@ typedef struct _SUBARR_DATA
     int sum;
 }subarrData;
 
-subarrData brutforceFind(int* arr, size_t begPos, size_t endPos, int step);
+subarrData brutforceFind(int* arr, size_t begPos, size_t endPos);
