@@ -25,12 +25,26 @@ void exchangeElements(int* arr, size_t i, size_t j)
 
 
 
-void maxHeapify(int* arr, size_t i)
+void maxHeapify(heap* node, size_t i)
 {
     size_t right = getRight(i);
     size_t left = getLeft(i);
+    size_t largest = 0;
 
+    if (left <= node->heapSize && node->intArr[i] < node->intArr[left])
+        largest = left;
+    else
+        largest = i;
+    if (right <= node->heapSize && node->intArr[i] < node->intArr[right])
+        largest = right;
+    if (largest != i)
+    { 
+        exchangeElements(node->intArr, i, largest);
+        maxHeapify(node, largest);
+    }
 }
+
+
 void buildMaxHeap(int* arr)
 {
 
