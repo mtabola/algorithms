@@ -3,7 +3,7 @@
 
 size_t getParent(size_t i)
 {
-    return (size_t) ceil(i / 2);
+    return (size_t)ceil(i / 2);
 }
 
 size_t getLeft(size_t i)
@@ -36,9 +36,9 @@ void maxHeapify(heap* node, size_t i)
 
     if (right < node->heapSize && node->intArr[largest] < node->intArr[right])
         largest = right;
-    
+
     if (largest != i)
-    { 
+    {
         exchangeElements(node->intArr, i, largest);
         maxHeapify(node, largest);
     }
@@ -56,7 +56,7 @@ void buildMaxHeap(heap* node)
 void heapsort(heap* node)
 {
     buildMaxHeap(node);
-    for (size_t i = (size_t)node->arrSize - 1; i >= 1 ; i--)
+    for (size_t i = (size_t)node->arrSize - 1; i >= 1; i--)
     {
         exchangeElements(node->intArr, 0, i);
         node->heapSize--;
