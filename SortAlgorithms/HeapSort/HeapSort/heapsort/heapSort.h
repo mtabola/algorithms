@@ -18,6 +18,6 @@ void exchangeElements(int* arr, size_t i, size_t j);
 
 
 
-void maxHeapify(int* arr, size_t i);
-void buildMaxHeap(int* arr);
-void heapsort(int* arr);
+void maxHeapify(heap* node, size_t i);
+void buildMaxHeap(heap* node);
+void heapsort(heap* node);

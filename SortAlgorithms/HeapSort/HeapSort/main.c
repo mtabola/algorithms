@@ -5,11 +5,11 @@
 
 #define SIZE 10
 
-void heapFill(heap* node, size_t start)
+void heapFill(heap* node)
 {
     node->intArr = getRandFillArr(SIZE, 0, 50);
     node->arrSize = SIZE;
-    node->heapSize = SIZE - start;
+    node->heapSize = 0;
 }
 
 
@@ -22,7 +22,7 @@ int main(int argc, char** argv)
 
     printArr("Before ", node.intArr, node.arrSize);
 
-    maxHeapify(&node, 0);
+    buildMaxHeap(&node);
 
     printArr("After ", node.intArr, node.arrSize);
 
