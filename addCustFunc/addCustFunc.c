@@ -21,3 +21,11 @@ int* getRandFillArr(size_t size, int min, int max) {
 
     return sortArr;
 }
+
+
+void exchangeElements(int* arr, size_t i, size_t j)
+{
+    int tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+}
