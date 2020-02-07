@@ -16,12 +16,6 @@ size_t getRight(size_t i)
     return (size_t)(2 * i + 2);
 }
 
-void exchangeElements(int* arr, size_t i, size_t j)
-{
-    int tmp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = tmp;
-}
 
 
 
