@@ -2,6 +2,8 @@
 #include <assert.h>
 #include <stdlib.h>
 
+#include "../../../addCustFunc/addCustFunc.h"
+
 typedef struct _heapStruct
 {
     int* intArr;
