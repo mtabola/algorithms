@@ -3,16 +3,15 @@
 
 #include "quicksortFunctions/quicksort.h"
 
-#define SIZE 8
+#define SIZE 16
 
 int main()
 {
-    int a[SIZE] = {2, 8, 7, 1, 3, 5, 6, 4};
-    int* arr = a;//getRandFillArr(SIZE, -10, 10);
+    int* arr = getRandFillArr(SIZE, -20, 40);
 
     printArr("Before ", arr, SIZE);
 
-    partition(arr, 0, SIZE - 1);
+    quicksort(arr, 0, SIZE - 1);
 
     printArr("After ", arr, SIZE);
     return 0;
