@@ -29,7 +29,7 @@ void countSort(int* inArr, size_t inArrSize, int exp)
 
 
 
-int* radixSort(int* inpArr, size_t size)
+void radixSort(int* inpArr, size_t size)
 {
     int max = findMaxElem(inpArr, size);
 
