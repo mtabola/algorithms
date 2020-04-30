@@ -26,23 +26,23 @@ typedef struct _SESSION
 
 session* createSession();
 void deleteSession(session*);
-void deleteBranch(session*, node*);
+static void deleteBranch(session*, node*);
 
 node* findNode(const session* const, const int );
 
 node* findMinNode(const session* const, node*);
 node* findMaxNode(const session* const, node*);
 
-void leftRotation(session*, node*);
-void rightRotation(session*, node*);
+static void leftRotation(session*, node*);
+static void rightRotation(session*, node*);
 
 void insertNode(session*, const int);
-void insertFixup(session*, node*);
+static void insertFixup(session*, node*);
 
-void transplant(session*, node*, node*);
+static void transplant(session*, node*, node*);
 void deleteNode(session*, const int );
-void deleteFixup(session*, node*);
+static void deleteFixup(session*, node*);
 
 void printSession(const session* const);
-void printBranch(node* root, int level, char** namesArr);
-void padding(char ch, int tabs);
+static void printBranch(node* root, int level, char** namesArr);
+static void padding(char ch, int tabs);

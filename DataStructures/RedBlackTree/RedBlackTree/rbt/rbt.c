@@ -46,7 +46,7 @@ void deleteSession(session* ses)
 
 }
 
-void deleteBranch(session* ses, node* head)
+static void deleteBranch(session* ses, node* head)
 {
     if (ses == NULL)
     {
@@ -116,7 +116,7 @@ node* findMaxNode(const session* const ses, node* head)
 }
 
 
-void leftRotation(session* ses, node* x)
+static void leftRotation(session* ses, node* x)
 {
     if (ses == NULL)
     {
@@ -141,7 +141,7 @@ void leftRotation(session* ses, node* x)
     x->parent = y;
 }
 
-void rightRotation(session* ses, node* y)
+static void rightRotation(session* ses, node* y)
 {
     if (ses == NULL)
     {
@@ -215,7 +215,7 @@ void insertNode(session* ses, const int key)
     insertFixup(ses, newNode);
 }
 
-void insertFixup(session* ses, node* z)
+static void insertFixup(session* ses, node* z)
 {
     if (ses == NULL)
     {
@@ -278,7 +278,7 @@ void insertFixup(session* ses, node* z)
 }
 
 
-void transplant(session* ses, node* u, node* v)
+static void transplant(session* ses, node* u, node* v)
 {
     if (ses == NULL)
     {
@@ -351,7 +351,7 @@ void deleteNode(session* ses, const int key)
     ses->nodeQty--;
 }
 
-void deleteFixup(session* ses, node* x)
+static void deleteFixup(session* ses, node* x)
 {
     if (ses == NULL)
     {
@@ -425,7 +425,7 @@ void deleteFixup(session* ses, node* x)
     x->color = BLACK;
 }
 
-void printSession(session* ses)
+void printSession(const session* const ses)
 {
     char* names[8]  = {"BLACK", "RED"};
 
@@ -439,7 +439,7 @@ void printSession(session* ses)
     printBranch(ses->root, 0, names);
 }
 
-void printBranch(node* root, int level, char** namesArr)
+static void printBranch(node* root, int level, char** namesArr)
 {
 
     if (root == NULL)
@@ -457,7 +457,7 @@ void printBranch(node* root, int level, char** namesArr)
     }
 }
 
-void padding(char ch, int tabs) {
+static void padding(char ch, int tabs) {
     for (int i = 0; i < tabs; i++)
         putchar(ch);
 }

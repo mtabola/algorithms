@@ -9,6 +9,7 @@ int main()
     insertNode(ses, 10);
     insertNode(ses, 29);
 
+
     printSession(ses);
     deleteSession(ses);
 
