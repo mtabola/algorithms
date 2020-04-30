@@ -1,4 +1,4 @@
-#include "bst/bst.h"
+#include "mainFunctions/bst.h"
 
 int main()
 {

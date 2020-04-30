@@ -1,5 +1,4 @@
 #include "heapSort.h"
-#include <math.h>
 
 size_t getParent(size_t i)
 {

@@ -1,5 +1,4 @@
 #include "quicksort.h"
-#include <stdlib.h>
 
 
 void quicksort(int* arr, int min, int max)
@@ -12,7 +11,7 @@ void quicksort(int* arr, int min, int max)
     }
 }
 
-int partition(int* arr, int min, int max)
+static int partition(int* arr, int min, int max)
 {
     int x = arr[max];
     int i = min - 1;

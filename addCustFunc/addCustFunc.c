@@ -4,19 +4,26 @@
 void printArr(char* txt, int* arr, size_t arrSize)
 {
     printf("%s ", txt);
-    for (int i = 0; i < arrSize; i++)
+
+    for (size_t i = 0; i < arrSize; i++)
         printf("%d ", arr[i]);
+    
     printf("\n");
 }
 
-int* getRandFillArr(size_t size, int min, int max) {
+int* getRandFillArr(size_t size, int min, int max) 
+{
     srand(time(NULL));
 
-    int* sortArr = malloc(sizeof(int) * size);
+    int* sortArr = calloc(size, sizeof(int));
 
-    assert(!(sortArr == NULL));
+    if (sortArr == NULL)
+    {
+        puts("Array wasn't created. Problem with heap.");
+        return NULL;
+    }
 
-    for (int i = 0; i < size; i++)
+    for (size_t i = 0; i < size; i++)
     {
         sortArr[i] = min + (rand() % (max - min));
     }
@@ -53,7 +60,7 @@ int findMaxGrade(int* inpArr, size_t size)
         int zeroCounter = 0;
         int currentGrade = (int)pow(10, i);
 
-        for (int j = 0; j < size; j++)
+        for (size_t j = 0; j < size; j++)
         {
             if ((inpArr[j] / currentGrade) == 0)
                 zeroCounter++;

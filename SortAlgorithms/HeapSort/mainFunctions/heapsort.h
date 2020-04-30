@@ -1,6 +1,8 @@
 #pragma once
 #include <assert.h>
 #include <stdlib.h>
+#include <math.h>
+
 
 #include "../../../addCustFunc/addCustFunc.h"
 
@@ -16,7 +18,6 @@ typedef struct _heapStruct
 size_t getParent(size_t i);
 size_t getLeft(size_t i);
 size_t getRight(size_t i);
-void exchangeElements(int* arr, size_t i, size_t j);
 
 
 

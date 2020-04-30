@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "bruteforce.h"
+#include "mainFunctions/bruteforce.h"
 #include "../../../addCustFunc/addCustFunc.h"
 
 #define SIZE 16

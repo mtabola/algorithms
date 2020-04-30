@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "doublelinkedlist/doublelinkedlist.h"
+#include "mainFunctions/doublelinkedlist.h"
 
 
 int main()

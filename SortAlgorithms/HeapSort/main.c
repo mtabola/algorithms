@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../../addCustFunc/addCustFunc.h"
-#include "heapsortFunctions/heapsort.h"
+#include "mainFunctions/heapsort.h"
 
 #define SIZE 16
 

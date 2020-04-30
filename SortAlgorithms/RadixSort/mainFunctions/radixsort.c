@@ -1,6 +1,6 @@
 #include "radixsort.h"
 
-void countSort(int* inArr, size_t inArrSize, int exp)
+void modeCountSort(int* inArr, size_t inArrSize, int exp)
 {
     int max = findMaxElem(inArr, inArrSize);
 
@@ -35,6 +35,6 @@ void radixSort(int* inpArr, size_t size)
 
     for (int exp = 1; max/exp > 0; exp *= 10)
     {
-        countSort(inpArr, size, exp);
+        modeCountSort(inpArr, size, exp);
     }
 }

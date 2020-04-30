@@ -1,4 +1,4 @@
-#include "stack/stack.h"
+#include "mainFunctions/stack.h"
 
 extern const size_t STACKSIZE;
 

@@ -1,6 +1,8 @@
-#pragma once
+#include "mergeSort.h"
 
-void merge(int* sortArr, size_t min, size_t mid, size_t max)
+
+
+static void merge(int* sortArr, size_t min, size_t mid, size_t max)
 {
     int lPart = mid - min + 1;
     int rPart = max - mid;
@@ -17,9 +19,6 @@ void merge(int* sortArr, size_t min, size_t mid, size_t max)
     {
         rArr[j] = sortArr[mid + 1 + j];
     }
-
-    lArr = insertSort(lArr, lPart);
-    rArr = insertSort(rArr, rPart);
 
     int left = 0;
     int right = 0;
@@ -54,9 +53,10 @@ void merge(int* sortArr, size_t min, size_t mid, size_t max)
     }
 }
 
+
 void mergeSort(int* sortArr, size_t min, size_t max)
 {
-    if (min < max * 2)
+    if (min < max)
     {
         size_t mid = (min + (max - 1)) / 2;
         mergeSort(sortArr, min, mid);

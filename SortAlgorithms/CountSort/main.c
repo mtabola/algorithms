@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "countsort/countsort.h"
 
-#include "../../../addCustFunc/addCustFunc.h"
+#include "../../addCustFunc/addCustFunc.h"
 
 #define SIZE 16
 
