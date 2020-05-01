@@ -1,5 +1,5 @@
 # Algorithms
-In this repository are stored my own implementation of different algarithms. All algorithms based on Introduction to Algorithms 3rd Edition book.
+In this repository are stored my own implementation of different algorithms. All algorithms based on Introduction to Algorithms 3rd Edition book.
 
 # References
 + [Introduction to Algorithms 3rd Edition by Clifford Stein, Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest][1]
