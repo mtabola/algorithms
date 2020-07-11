@@ -1,9 +1,0 @@
-findMaxGrade
-1) 	To create tmp array, and to copy in this array the inpArr
-	In loop we are checking values from tmp
-	If (tmp[j] / pow(10, i) == 0) - we are deleting this element from tmp (set 0)
-
-	+					-
-	1) Easy for release			1)Eat many memory and use many instructions
-
-2) 	
